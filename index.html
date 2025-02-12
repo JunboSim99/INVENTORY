@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI-Powered Inventory Management</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      scroll-behavior: smooth;
+    }
+    /* Navigation */
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    .nav-link {
+      font-size: 1.1rem;
+    }
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center center no-repeat;
+      background-size: cover;
+      color: #fff;
+      padding: 120px 0;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    /* Section Styling */
+    section {
+      padding: 60px 0;
+    }
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #007bff;
+    }
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">AI Inventory</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#supplier">Supplier</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#marketing">Marketing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#inventory">Inventory</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#customer">Customer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tech">Tech Specs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container hero-content">
+      <h1 class="display-4 fw-bold">AI-Powered Inventory Management</h1>
+      <p class="lead">Streamline supplier tracking, marketing alignment, and inventory forecasting with smart AI-driven insights.</p>
+      <a href="#tech" class="btn btn-primary btn-lg mt-4">Learn More</a>
+    </div>
+  </header>
+
+  <!-- Supplier Management Section -->
+  <section id="supplier">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <i class="fa-solid fa-truck feature-icon"></i>
+          <h2>Supplier Management</h2>
+          <p>
+            Automatically track and verify purchase orders with vendors. Receive notifications for delays or cancellations, including weather-related setbacks using our integrated Weather API.
+          </p>
+          <ul>
+            <li>Automated order confirmations &amp; follow-ups</li>
+            <li>Milestone auto-check-in</li>
+            <li>Supplier performance analysis based on on-time deliveries</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <img src="https://images.unsplash.com/photo-1571501679680-de32f1e7aad4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Supplier Management" class="img-fluid rounded" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marketing Alignment Section -->
+  <section id="marketing" class="bg-light">
+    <div class="container">
+      <div class="row align-items-center flex-md-row-reverse">
+        <div class="col-md-6">
+          <i class="fa-solid fa-bullhorn feature-icon"></i>
+          <h2>Marketing Alignment</h2>
+          <p>
+            AI estimates shipment arrivals and calculates key marketing dates. Stay ahead with automated alerts for shipment delays, a shared campaign calendar, and a real-time visibility board for order status.
+          </p>
+          <ul>
+            <li>Shared calendar for campaign alignment</li>
+            <li>Real-time order visibility</li>
+            <li>Automated shipment delay alerts</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Marketing Alignment" class="img-fluid rounded" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inventory Management Section -->
+  <section id="inventory">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <i class="fa-solid fa-warehouse feature-icon"></i>
+          <h2>Inventory Management</h2>
+          <p>
+            Leverage AI for demand planning during major events and monitor customer behavior patterns to forecast inventory needs. Automated reordering helps prevent stockouts, with priority given to top-selling products.
+          </p>
+          <ul>
+            <li>Event-based demand forecasting</li>
+            <li>Automated reordering at set thresholds</li>
+            <li>Continuous auditing of top-selling items</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <img src="https://images.unsplash.com/photo-1585158534768-1a560e9d0b44?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Inventory Management" class="img-fluid rounded" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Service Automation Section -->
+  <section id="customer" class="bg-light">
+    <div class="container">
+      <div class="row align-items-center flex-md-row-reverse">
+        <div class="col-md-6">
+          <i class="fa-solid fa-headset feature-icon"></i>
+          <h2>Customer Service Automation</h2>
+          <p>
+            Enhance customer experience with an AI-powered chatbot that manages inquiries, order changes, and cancellations. The system even recommends alternative items when products are out of stock and generates automated complaint reports.
+          </p>
+          <ul>
+            <li>AI-driven chatbot support</li>
+            <li>Automated complaint analysis &amp; resolution</li>
+            <li>Order change and cancellation handling</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <img src="https://images.unsplash.com/photo-1588702547923-7093a6c3ba33?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Customer Service Automation" class="img-fluid rounded" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Specifications Section -->
+  <section id="tech">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <i class="fa-solid fa-code feature-icon"></i>
+          <h2>Technical Specifications</h2>
+          <p>
+            Our platform is built using modern frameworks and AI technologies to ensure scalability, efficiency, and security.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h4>Frontend</h4>
+          <ul>
+            <li>React.js or Vue.js for dynamic interfaces</li>
+            <li>Integrated dashboards, calendars, and Kanban boards</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4>Backend &amp; AI</h4>
+          <ul>
+            <li>Python (Flask/Django) or Node.js (Express)</li>
+            <li>Database: PostgreSQL or MongoDB</li>
+            <li>AI models via TensorFlow, Scikit-learn, or OpenAI API</li>
+            <li>Weather, Calendar, and Chatbot API integrations</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12 text-center">
+          <h4>Automation &amp; Security</h4>
+          <ul class="list-inline">
+            <li class="list-inline-item">Scheduled Scripts &amp; Auto-Email Notifications</li>
+            <li class="list-inline-item">Slack/Microsoft Teams Integration</li>
+            <li class="list-inline-item">Role-Based Access Control (RBAC) &amp; Secure Authentication (OAuth2/JWT)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 AI-Powered Inventory Management. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
